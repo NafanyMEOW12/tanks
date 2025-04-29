@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТАНКИ ГРЯЗИ НЕ БОЯТСЯ</title>
+    <link rel="stylesheet" href="tank.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div id="login-form">
+            <h2>Входим быстро</h2>
+            <input type="text" id="login-username" placeholder="Логин">
+            <input type="password" id="login-password" placeholder="Пароль">
+            <button onclick="login()">Войти бесплатно </button>
+            <p>Нет аккаунта у тебя да? <a href="javascript:void(0)" onclick="showRegister()">Зарегистрироваться без смс и регистраций</a></p>
+        </div>
+        <div id="register-form" style="display: none;">
+            <h2>Регистрация</h2>
+            <input type="text" id="register-username" placeholder="Логин">
+            <input type="password" id="register-password" placeholder="Пароль">
+            <button onclick="register()">Зарегистрироваться быстренько тап тап </button>
+            <p>Есть аккаунт?красавчик <a href="javascript:void(0)" onclick="showLogin()">Войти сюдааа</a></p>
+        </div>
+    </div>
+    <div id="menu">
+        <h1>Танчики</h1>
+        <img id="menu-tank" src="https://avatars.mds.yandex.net/i?id=71455b86e920c42c6f49f04a5a9385e6_l-3700279-images-thumbs&n=13" alt="Танк" width="1000" height="750" style="display: block; margin: 20px auto;">
+        <button id="play-button" class="menu-button">Начииинаеам братцы игру</button>
+        <button id="shop-button" class="menu-button">Магазин</button>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600" style="display:none;"></canvas>
+
+    
+    <div id="shop" style="display: none; text-align: center; background-color: #222; color: white; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <h2>Выберите танк</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+        </div>
+        <button id="back-to-menu" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; cursor: pointer;">Назад в меню</button>
+    </div>
+
+    <div id="score-container">
+        Очки: <span id="score">0</span>
+    </div>
+    <script src="tank.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -359,7 +359,7 @@ const tankImage = document.getElementById('menu-tank');
 if (tankImage) {
     tankImage.addEventListener('click', () => {
         console.log('Фотография в меню нажата');
-        alert('Ты выбрал танк, красавец!');
+        alert('Ты выбрал танк!');
     });
 } else {
     console.error('Элемент с id="menu-tank" не найден!');
@@ -878,12 +878,12 @@ function endGame(result) {
     ctx.fillStyle = 'white';
     ctx.font = '48px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText(result === 'win' ? 'Красавец!' : 'Лузер!', canvas.width / 2, canvas.height / 2);
+    ctx.fillText(result === 'win' ? 'Вы победили' : 'Вы проиграли', canvas.width / 2, canvas.height / 2);
 
     if (result === 'win') {
         if (currentLevel < 12) {
             const nextButton = document.createElement('button');
-            nextButton.innerText = 'Перейти на супер пупер мега некст уровень';
+            nextButton.innerText = 'Перейти на следующий уровень';
             nextButton.style.position = 'absolute';
             nextButton.style.top = '50%';
             nextButton.style.left = '50%';
@@ -909,7 +909,7 @@ function endGame(result) {
         }
     } else if (result === 'lose') {
         const restartButton = document.createElement('button');
-        restartButton.innerText = 'Начинаем заново да дон';
+        restartButton.innerText = 'Начинаем заново';
         restartButton.style.position = 'absolute';
         restartButton.style.top = '50%';
         restartButton.style.left = '50%';

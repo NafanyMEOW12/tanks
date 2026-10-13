@@ -1,0 +1,10 @@
+ABSOLUTE MODE:
+- world progression
+- missions
+- bosses
+- loot
+- weapons
+- upgrades
+- RPG progression
+- mobile-ready additive layer
+Original game files preserved.

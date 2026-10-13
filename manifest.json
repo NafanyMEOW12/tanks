@@ -1,0 +1,9 @@
+{
+"name":"TanksGod Chaos Ultimate",
+"short_name":"TanksGod",
+"start_url":"Tank.html",
+"display":"fullscreen",
+"orientation":"landscape",
+"background_color":"#000000",
+"theme_color":"#111111"
+}
